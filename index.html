@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Guess The Year</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="box">
+        <div id="navbar">
+            <div class="buttons-container">
+                <button class="button-arounder" id="score">Your Score: 0</button>
+            </div>
+            <div class="buttons-container">
+                <button class="button-arounder" id="lives">Lives Remaining: 100</button>
+            </div>
+        </div>
+        <h1 id="title">Guess The Year</h1>
+        <p id="q">In what year did the following happen?:</p>
+        <p id="question"></p>
+        <div class="slider-container">
+            <input type="range" id="slider" min="1900" max="2023">
+            <div class="slider-values"><br>
+                <div id="min-value">Min Possible Value : 1900</div>
+                <div id="guess-value">Your Current Guess Value: 2023</div>
+                <div id="max-value">Maximum Possible Value: 2023</div>
+            </div>
+        </div>
+        <div class="buttons-container">
+            <button onclick="checkAnswer()" class="button-arounder" id="ans">Check Answer</button>
+        </div>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
